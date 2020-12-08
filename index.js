@@ -1,3 +1,4 @@
+const conexion = require('./Conexion/Conector')
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
@@ -23,7 +24,8 @@ app.use(isValid);
 
 
 app.get('/saludo', (req, res) => {
-    res.send('Hello World!');
+
+    res.send();
 })
 
 
